@@ -1,0 +1,74 @@
+/* Variables */
+:root {
+    /* Colors */
+    --white: hsl(0, 0%, 100%);
+    --background-color: hsl(212, 45%, 89%); /*Light Gray*/
+    --primary-color: hsl(220, 15%, 55%); /*Grayish blue*/
+    --secondary-color: hsl(218, 44%, 22%); /*Dark blue*/
+
+    /* Typography */
+    --font-family: 'Outfit', sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+/* Basic Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    background-color: var(--white);
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    width: 85%;
+    max-width: 330px;
+    height: auto;
+    padding: 15px 15px 40px 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+}
+
+h1 {
+    font-weight: var(--font-weight-bold);
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 0 15px;
+}
+
+p {
+    font-weight: var(--font-weight-normal);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0 15px;
+}
+
+
